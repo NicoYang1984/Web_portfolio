@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单元素测试</title>
+	</head>
+	<body>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<table width="100%">
+			<tr>
+				<td width="100%">
+					请输入您的邮箱地址：
+					<input type="email" value="输入邮箱地址" name="email" id="email"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					请输入一个网址：
+					<input type="url" name="website" value="输入网址"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					请输入数字：
+					<input type="number" name="quantity" max="100" min="1"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					数字滑动条：
+					<input type="range" name="range" min="0" max="250" value="185"/>
+					<input type="text" value="185" width="5"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					请输入日期：
+					<input type="date" name="day" value="年/月/日"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					请选择颜色：
+					<input type="color" name="favcolor" value="#FF0000">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					请选择招式：
+					<input list="skill" name="skill"/>
+					<!--
+                    	在使用datalist的时候这个list和下面的id应该一样（但是和name可以有所不一样）
+                    -->
+					<datalist id="skill">
+						<option value="亢龙有悔">
+						<option value="飞龙在天">
+						<option value="见龙在田">
+						<option value="神龙摆尾">
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="提交" name="submit" />
+				</td>
+			</tr>
+		    </table>
+		</form>
+	</body>
+</html>
