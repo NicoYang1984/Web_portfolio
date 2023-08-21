@@ -1,0 +1,50 @@
+*{
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+table{
+    margin-top: 150px;
+}
+tr{
+    height: 50px;
+}
+a{
+    text-decoration: none;
+}
+#reg,#log{
+    /* //用这种方法表示某id元素的样式 */
+    background-color: darkgreen;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #232;
+}
+#username{
+    background-image: url(../img/user.JPG);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    height: 35px;
+    padding-left: 35px;
+    border: 1px solid gray;
+    outline: none;
+    /* transition: 3s; */
+}
+#username:hover{
+    border:1px solid blueviolet;
+}
+#password,#repassword{
+    background-image: url(../img/password.JPG);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    height: 35px;
+    padding-left: 35px;
+    border: 1px solid gray;
+    outline: none;
+    /* transition: 3s; */
+}
+#password:hover{
+    border:1px solid blueviolet;
+}
+#repassword:hover{
+    border:1px solid blueviolet;
+}

@@ -1,0 +1,22 @@
+.td1{
+    height: 30px;
+    background-color: gainsboro;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid gainsboro;
+}
+.td2{
+    height: 130px;
+    border: 1px solid gainsboro;
+    align-content: center;
+}
+.table1{
+    border: 1px solid gainsboro;
+    width: 750px;
+    align-self: center;
+}
+.sp1{
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+}

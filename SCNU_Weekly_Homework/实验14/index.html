@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>drag</title>
+		<script src="js/drag1.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/myCss.css">
+	</head>
+	<body>
+		<table width = "1200px" class="table1" id="first">
+			<caption >请将选择的菜品和果品拖拽至对应顾客下方区域</caption>
+			<tr>
+				<td class="td1" width="250px">顾客A</td>
+				<td class="td1" width="250px">顾客B</td>
+				<td class="td1" width="250px">顾客C</td>
+			</tr>
+			<tr>
+				<td class="td2">
+					<p class="sp1" ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+						<img src="img/1.JPG" draggable="true" ondragstart="startDrag(this)">
+					</p>
+				</td>
+				<td class="td2">
+					<p class="sp1" ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+						<img src="img/2.JPG" draggable="true" ondragstart="startDrag(this)">
+					</p>
+				</td>
+				<td class="td2">
+					<p class="sp1" ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+						<img src="img/3.JPG" draggable="true" ondragstart="startDrag(this)">
+					</p>
+				</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<table class="table2" id="second">
+			<tr>
+				<td class="td1" width = "550px">可选择的菜品以及果品</td>
+				<td class="td1" width = "200px">删除</td>
+			</tr>
+			<tr>
+				<td class="td2" id="pictures" 
+				ondragenter="enter()" ondragover="enter()" ondrop="getObj(this)">
+					<img src="img/4.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/5.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/6.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/7.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/8.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/9.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/10.JPG" draggable="true" ondragstart="startDrag(this)">
+					<img src="img/11.JPG" draggable="true" ondragstart="startDrag(this)">
+				</td>
+				<td class="td2" ondragenter="enter()" ondragover="enter()" ondrop="deleteImg(this)">
+					<p class="sp1">
+						<img src="img/12.JPG">
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

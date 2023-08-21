@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>无序列表下拉菜单</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			li{
+				list-style-type: none;
+				width: 140px;
+				height: 40;
+				line-height: 40px;
+				border: 1px dotted;
+				text-align: center;
+		
+				background-color: deepskyblue;
+			}
+			a{
+				font-size: 18px;
+				font-weight: bold;
+				font: "微软雅黑";
+				color:gray;
+				text-decoration:none
+			}
+			div ul li{/*设置第一层的li格式*/
+				float:left;
+			}
+			div ul li ul{
+				display: none;
+			}/*观察这里的样式设定：是分层的*/
+			div ul li:hover ul{
+				display: table;/*很奇怪的是，用block的参数的话视频里能实现，但是自己不行*/
+			}
+			div ul li:hover{
+				
+				background-color: white;
+			}
+			div ul li a:hover{
+				
+				color: gray
+			}
+			div ul li ul li{
+				
+				background-color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>
+					<a>首页</a>
+					<ul>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>
+						B页
+					</a>
+					<ul>
+						<li>
+							<a>
+							A
+							</a>
+						</li>
+						<li>
+							<a>
+							D
+							</a>
+						</li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>
+						C页
+					</a>
+					<ul>
+						<li>
+							<a>
+							A
+							</a>
+						</li>
+						<li>
+							<a>
+							C
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a>D页</a>
+					<ul>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>E页</a>
+					<ul>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+						<li><a>A</a></li>
+						<li><a>E</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

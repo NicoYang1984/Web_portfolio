@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>鼠标经过的图像</title>
+		<script type="text/javascript">
+			var i = 1;
+			var t;
+			function chgimg(){
+				var obj = document.getElementById("mying");
+				obj.src="img/dl1d.jpg";
+			}
+			function rsimg(){
+				var obj = document.getElementById("mying");
+				obj.src="img/dl1.jpg";
+			}
+			function Turning()
+			{
+				var obj=document.getElementById("lb");
+				i++;
+				if(i>5)
+				{
+					i = 1;
+					obj.src="img/love1.jpg";
+				}
+				else
+				{
+					obj.src="img/love"+i+".jpg";
+				}
+			}
+			function Stop()
+			{
+				clearInterval(t);
+			}
+			
+			function Start()
+			{
+				t = setInterval("Turning()",1000);
+			}
+		</script>
+	</head>
+	<body onload="Turning()">
+		<center>
+		<p >鼠标经过的图像</p>
+		<img src="img/dl1.jpg" id="mying" 
+			onmouseover="chgimg()" onmouseleave="rsimg()">
+			<p>图片轮播</p>
+		   	<img src="img/love1.jpg" width="400px" height="300px" id ="lb">
+		   	<br />
+		   	<input type="button" onclick="Start()" value="开始">
+		   	<input type="button" onclick="Stop()" value="结束">
+		</center>
+		
+		
+	</body>
+</html>
